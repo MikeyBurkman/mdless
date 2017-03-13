@@ -1,6 +1,6 @@
 {
   "name": "markdown-cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Markdown renderer for CLI",
   "bin": {
     "md": "index.js"
@@ -16,6 +16,7 @@
   "author": "MikeyBurkman",
   "license": "MIT",
   "dependencies": {
+    "get-stdin": "^5.0.1",
     "marked": "^0.3.6",
     "marked-terminal": "^2.0.0",
     "node-pager": "^0.3.1"

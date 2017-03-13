@@ -8,4 +8,4 @@ For viewing and paging through a markdown file
 ## Usage
 `md README.md`
 
-Navigating is done like in `less` in bash.
+Navigating is done like in `less` in bash. (It's not actually using less)
