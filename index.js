@@ -1,4 +1,5 @@
 
+var path = require('path');
 var fs = require('fs');
 var marked = require('marked');
 var pager = require('node-pager');
@@ -11,9 +12,11 @@ if (!fileName) {
     process.exit(1);
 }
 
+var fileString = fs.readFileSync(path.resolve(fileName), 'utf8')
+
 marked.setOptions({
   renderer: new TerminalRenderer()
 });
-var markedUp = marked(fs.readFileSync(fileName, 'utf8'));
+var markedUp = marked(fileString);
 
 pager(markedUp);
