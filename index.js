@@ -20,8 +20,9 @@ if (fileName) {
     var fileString = fs.readFileSync(path.resolve(fileName), 'utf8');
     render(fileString);
 } else {
-    render(stdin());
+    stdin().then(render);
 }
+
 
 function render(s) {
     marked.setOptions({
