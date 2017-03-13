@@ -6,6 +6,6 @@ For viewing and paging through a markdown file
 `npm i -g MikeyBurkman/markdown-cli`
 
 ## Usage
-`md README.md`
+`mdless README.md`
 
 Navigating is done like in `less` in bash. (It's not actually using less)
