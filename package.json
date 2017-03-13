@@ -2,7 +2,9 @@
   "name": "markdown-cli",
   "version": "1.0.0",
   "description": "Markdown renderer for CLI",
-  "bin": "index.js",
+  "bin": {
+    "md": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
