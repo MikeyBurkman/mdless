@@ -1,0 +1,9 @@
+node_modules
+*~
+cov-*
+coverage
+plato
+.idea
+*.log
+.DS_Store
+.vscode

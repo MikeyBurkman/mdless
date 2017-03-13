@@ -1,0 +1,21 @@
+{
+  "name": "markdown-cli",
+  "version": "1.0.0",
+  "description": "Markdown renderer for CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "markdown",
+    "cli",
+    "terminal"
+  ],
+  "author": "MikeyBurkman",
+  "license": "MIT",
+  "dependencies": {
+    "marked": "^0.3.6",
+    "marked-terminal": "^2.0.0",
+    "node-pager": "^0.3.1"
+  }
+}
