@@ -1,6 +1,6 @@
 {
   "name": "mdless",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Markdown CLI viewer with formatting and paging",
   "bin": {
     "mdless": "index.js"
