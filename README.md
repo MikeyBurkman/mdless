@@ -2,8 +2,7 @@
 For viewing and paging through a markdown file with formatting
 
 ## Installation
-(Not in npm right now)
-`npm i -g MikeyBurkman/mdless`
+`npm i -g mdless`
 
 ## Usage
 * `mdless README.md`
