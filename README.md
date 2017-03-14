@@ -6,7 +6,9 @@ For viewing and paging through a markdown file with formatting
 `npm i -g MikeyBurkman/mdless`
 
 ## Usage
-`mdless README.md`
+* `mdless README.md`
+OR
+* `cat README.md | mdless`
 
 Navigating is done like in `less` in bash:
 * Use `up` and `down` arrow keys to scroll
