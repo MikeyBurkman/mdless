@@ -1,6 +1,6 @@
 {
   "name": "mdless",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Markdown CLI viewer with formatting and paging",
   "bin": {
     "mdless": "index.js"
@@ -14,6 +14,10 @@
     "terminal"
   ],
   "author": "MikeyBurkman",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MikeyBurkman/mdless.git"
+  },
   "license": "MIT",
   "dependencies": {
     "get-stdin": "^5.0.1",
