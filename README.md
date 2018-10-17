@@ -1,6 +1,8 @@
 # mdless
 For viewing and paging through a markdown file with formatting
 
+![example](https://i.imgur.com/nAj7M9J.png)
+
 ## Installation
 `npm i -g mdless`
 
