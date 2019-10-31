@@ -21,5 +21,8 @@
     "marked": "^0.5.1",
     "marked-terminal": "^3.1.1",
     "node-pager": "^0.3.2"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
   }
 }
