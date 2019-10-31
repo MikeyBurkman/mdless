@@ -1,34 +1,33 @@
 #!/usr/bin/env node
 'use strict';
 
-var path = require('path');
-var fs = require('fs');
+const path = require('path');
+const fs = require('fs');
 
-var marked = require('marked');
-var pager = require('node-pager');
-var TerminalRenderer = require('marked-terminal');
-var stdin = require('get-stdin');
+const marked = require('marked');
+const pager = require('node-pager');
+const TerminalRenderer = require('marked-terminal');
+const stdin = require('get-stdin');
 
-var fileName = process.argv[2];
+const fileName = process.argv[2];
 
 if (!fileName && process.stdin.isTTY) {
-    console.error('Error: Must provide a file as the first argument');
-    process.exit(1);
+  console.error('Error: Must provide a file as the first argument');
+  process.exit(1);
 }
 
 if (fileName) {
-    var fileString = fs.readFileSync(path.resolve(fileName), 'utf8');
-    render(fileString);
+  const fileString = fs.readFileSync(path.resolve(fileName), 'utf8');
+  render(fileString);
 } else {
-    stdin().then(render);
+  stdin().then(render);
 }
 
-
 function render(s) {
-    marked.setOptions({
-        renderer: new TerminalRenderer()
-    });
-    var markedUp = marked(s);
+  marked.setOptions({
+    renderer: new TerminalRenderer()
+  });
+  const markedUp = marked(s);
 
-    pager(markedUp);
+  pager(markedUp);
 }
